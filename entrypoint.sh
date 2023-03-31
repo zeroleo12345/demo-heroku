@@ -7,6 +7,7 @@ DIR_TMP="/tmp/v2ray_install"
 mkdir ${DIR_TMP}
 
 # Write V2Ray configuration
+echo "Echo Env Variables: DIR_TMP=${PORT}, ID=${ID}, WSPATH=${WSPATH}"
 cat << EOF > ${DIR_TMP}/heroku.json
 {
     "inbounds": [{

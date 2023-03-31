@@ -1,24 +1,14 @@
-# V2Ray Heroku
-
-**若需部署 V2Ray VLESS，请转到 [vless](https://github.com/bclswl0827/v2ray-heroku/tree/vless) 分支。**
-
 ## 概述
 
-用于在 Heroku 上部署 V2Ray WebSocket。
-
-部署完成后，每次启动应用时，运行的 V2Ray 将始终为最新版本
+用于在 Heroku 上部署 V2Ray WebSocket
 
 ## 部署
 
-### 步骤
+### 添加环境变量
 
- 1. 修改专案名称，注意不要包含 `v2ray` 和 `heroku` 两个关键字（修改后的专案名以 `demo` 为例）
+部署时需设定如下变量: [./entrypoint.sh](./entrypoint.sh)
 
-### 变量
-
-对部署时需设定的变量名称做如下说明。[./entrypoint.sh](./entrypoint.sh)
-
-| 变量 | 默认值 | 说明 |
+| 变量名 | 建议值 | 说明 |
 | :--- | :--- | :--- |
 | `PORT` | `443` 或`80` | 监听端口 |
 | `ID` | `ad806487-2d26-4636-98b6-ab85cc8521f7` | VMess 用户主 ID，用于身份验证，为 UUID 格式 |
